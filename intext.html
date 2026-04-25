@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Panther Fitness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: yellow;
+}
+
+h1 {
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+
+/* BUTTON */
+.btn {
+  background: yellow;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO VIDEO -->
+<div class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="gym-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>PANTHER FITNESS</h1>
+    <p>Unleash Your Power 💪</p>
+    <a href="https://wa.me/919900412321" class="btn">Join Now</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Us</h2>
+  <p>We help you build strength, fitness and confidence.</p>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>Our Services</h2>
+  <div class="card">Weight Training</div>
+  <div class="card">Personal Training</div>
+  <div class="card">Fat Loss Programs</div>
+</section>
+
+<!-- PLANS -->
+<section>
+  <h2>Membership Plans</h2>
+  <div class="card">1 Month - ₹1500</div>
+  <div class="card">3 Months - ₹4000</div>
+  <div class="card">1 Year - ₹12000</div>
+</section>
+
+<!-- OFFER -->
+<section>
+  <h2 style="color:yellow;">🔥 Limited Offer</h2>
+  <p>Join now and get 10% OFF!</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Gallery</h2>
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact Us</h2>
+  <p>📞 9900412321</p>
+  <p>📍 Your Gym Location</p>
+
+  <iframe 
+    src="https://maps.google.com/maps?q=Panther Fitness&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300">
+  </iframe>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/919900412321">💬</a>
+
+</body>
+</html>
