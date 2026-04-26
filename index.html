@@ -20,7 +20,8 @@ body {
   overflow: hidden;
 }
 
-.hero video {
+/* VIDEO BACKGROUND */
+.bg-video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,6 +31,7 @@ body {
   object-fit: cover;
 }
 
+/* DARK OVERLAY */
 .overlay {
   position: absolute;
   width: 100%;
@@ -37,6 +39,7 @@ body {
   background: rgba(0,0,0,0.6);
 }
 
+/* CONTENT ON VIDEO */
 .content {
   position: relative;
   z-index: 2;
@@ -59,6 +62,13 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: orange;
+  transform: scale(1.05);
 }
 
 /* SECTIONS */
@@ -100,7 +110,8 @@ section {
 
 <!-- HERO VIDEO -->
 <div class="hero">
-  <video autoplay muted loop playsinline>
+
+  <video autoplay muted loop playsinline class="bg-video">
     <source src="gym-video.mp4" type="video/mp4">
   </video>
 
@@ -111,12 +122,13 @@ section {
     <p>Unleash Your Power 💪</p>
     <a href="https://wa.me/919900412321" class="btn">Join Now</a>
   </div>
+
 </div>
 
 <!-- ABOUT -->
 <section>
   <h2>About Us</h2>
-  <p>We help you build strength, fitness and confidence.</p>
+  <p>We help you build strength, fitness, and confidence.</p>
 </section>
 
 <!-- SERVICES -->
@@ -161,7 +173,7 @@ section {
   </iframe>
 </section>
 
-<!-- WHATSAPP FLOAT -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/919900412321">💬</a>
 
 </body>
